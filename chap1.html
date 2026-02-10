@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    // console.log("and operator")
+    // let age = 25
+    // let id = false
+    // let result = (age > 20 && id)
+    // console.log(result)
+
+    // console.log("or operator")
+    // let age = 25
+    // let id = false
+    // let result = (age > 20 || id)
+    // console.log(result)
+
+    // let num = 10
+    // console.log(!num > 10)
+
+
+
+    // let x = 10;
+    // let y = 5 ;
+
+
+    // let temp = x;
+    // x = y
+    // y = temp
+
+    // console.log(x)
+    // console.log(y)
+
+
+
+    // let x = 7;
+    // let y = true
+    // let z = x + y;
+    // console.log( z)
+    // console.log(typeof zr)
+
+    //  age = prompt("enter your age: ")
+    //  if (age > 15){
+    //   console.log("you are allowed to access")
+    //  }
+    //  else{
+    //   console.log("you are not allowed")
+    //  }
+
+
+    //  num = prompt("enter number")
+    //  result = (num)? "even" : "odd"
+    //  console.log(result)
+
+
+
+    // let name = "ali"
+    // let age = 20
+    // let result = (name +  age)
+    // console.log(result)
+
+    // let x = 7
+    // let y = 8
+    // console.log(x === y)
+
+
+    // let num = parseFloat( prompt("Enter number"))
+    // if(num > 0){
+    //   if(num %2==0){
+    //     console.log("positive: Even number")
+    //   }
+    //   else{
+    //     console.log("positive: odd number")
+    //   }
+    // }
+    // else{
+    //   console.log("The number is negative")
+    // }
+
+
+    // let user_name= prompt("Enter user_name")
+    // let password = prompt("enter password")
+    // if (user_name === "admin" && password === "12345"){
+    //   console.log("successful")
+    //   alert("successfully enter welcome")
+
+    // }
+    // else{
+    //   console.log("invalid username or password")
+    //   alert("invalid")
+    // }
+
+
+//     let student_score = parseFloat(prompt("Enter your score"))
+
+//     if (!(student_score > 100 || student_score < 90)) {
+//       console.log("your score is A")
+//     }
+//     else if (!(student_score > 89 || student_score < 80)) {
+//       console.log("your score is B")
+//     }
+//     else if (!(student_score > 79 || student_score < 60)) {
+//       console.log("your score is C")
+//     }
+//     else if (!(student_score > 69 || student_score < 60)) {
+//       console.log("your score is D")
+//     }
+//     else if (!(student_score > 59 || student_score < 50)) {
+//       console.log("your score is E")
+//     }
+// else if (!(student_score > 49 || student_score < 0)){
+//   console.log("your score is F")
+// }
+//     else {
+//       console.log("ivalid score")
+//     }
+
+let name = prompt("Enter your name : ")
+let age = parseInt(prompt("Enter your age : "))
+let family_status = prompt("Do you have family: yes or no ")
+let monthly_salary = parseFloat(prompt("Enter your monthly salary: "))
+let years_worked = parseInt(prompt("Enter years you have been working this company: "))
+if (age >= 30 && family_status === "yes"){
+  if (!(monthly_salary >= 1000 || years_worked >= 5)){
+    console.log("you're Eligible to promote")
+  }
+  else{
+    console.log("not eligible")
+  }
+}
+else{
+  console.log("not eligible")
+}
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = prompt("enyter your name")
+        let age = parseInt(prompt("enter your age"))
+        let years_work = parseFloat(prompt("enter years work"))
+        let test_score = parseFloat(prompt("enter the score"))
+        if (age >= 21) {
+            if (years_work >= 5 && test_score >= 50 || years_work >=5) {
+                console.log("you are eligibility")
+            }
+            else {
+                console.log("your are not passed the interview")
+            }
+        }
+        else {
+            console.log("you are so young")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grades</title>
+</head>
+<body>
+  <script>
+    // Calculate total marks
+    function getTotal(marks) {
+      let total = 0;
+      for (let i = 0; i < marks.length; i++) {
+        total += marks[i];
+      }
+      return total;
+    }
+
+    // Calculate average
+    function getAverage(total, count) {
+      return total / count;
+    }
+
+    // Determine grade
+    function getGrade(avg) {
+      if (avg >= 80) {
+        return "A";
+      } else if (avg >= 60) {
+        return "B";
+      } else if (avg >= 40) {
+        return "C";
+      } else {
+        return "Fail";
+      }
+    }
+
+    // Display result
+    function displayResult(name, grade) {
+      console.log("Student Name: " + name);
+      console.log("Grade: " + grade);
+    }
+
+    // Main loop
+    let again = "yes";
+
+    while (again.toLowerCase() === "yes") {
+      let name = prompt("Enter student name:");
+      let numSubjects = parseInt(prompt("How many subjects?"));
+
+      let marks = [];
+      for (let i = 1; i <= numSubjects; i++) {
+        let mark = parseFloat(prompt("Enter mark for subject " + i + ":"));
+        marks.push(mark);
+      }
+
+      let total = getTotal(marks);
+      let avg = getAverage(total, numSubjects);
+      let grade = getGrade(avg);
+
+      console.log("Total Marks: " + total);
+      console.log("Average: " + avg.toFixed(2));
+      displayResult(name, grade);
+
+      again = prompt("Do you want to enter another student? (yes/no)");
+    }
+
+    console.log("Program ended.");
+  </script>
+</body>
+</html>
+</body>
+</html>

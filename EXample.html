@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name=prompt("enter your name;")
+        let age=parseFloat(prompt("enter your age;"))
+        let years_of_work=parseFloat(prompt("enter your year of work;"))
+        let score=parseInt(prompt("enter your score;"))
+
+        if (age>=21){
+            if ((years_of_work>=2  && score>=50) ||(years_of_work>5)) {
+                console.log (name,"you qualified the interview")
+
+                }
+                else{
+                    console.logna(name,"youre not qualified")
+                }
+
+
+        }
+        else{
+            console.log(name,"you are young")
+        }
+
+
+
+
+
+
+
+
+
+        let balance=parseFloat(prompt("enter your balance;"))
+        let with_your_draw=parseFloat(prompt("enter with your draw; "))
+        let pin=prompt("enter your pin;")
+        if(pin==="1234"){
+            if (balance>=with_your_draw){
+                console.log("transaction sucess full")
+            }
+            else{
+                console.log("insfuction balance;")
+            }
+
+
+        }
+        else{
+            console.log("invalid pin")
+        }
+    </script>
+</body>
+</html>

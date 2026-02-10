@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 320px;
+            background-color: rgb(81, 23, 23);
+            box-shadow: 10px 10px 10px rgb(142, 35, 35);
+            padding: 25px;
+            text-align: center;
+            margin-left: 450px;
+            margin-top: 150px;
+            border-radius: 10px;
+
+        }
+
+        #nameCkecker {
+            border: none;
+            background-color: white;
+            width: 90%;
+            margin-bottom: 10px;
+            border-radius: 7px;
+            text-align: left;
+            padding: 10px;
+        }
+
+        #marksChecker {
+            border: none;
+            background-color: white;
+            padding: 10px;
+            width: 90%;
+            margin-bottom: 10px;
+            border-radius: 7px;
+            text-align: left;
+        }
+
+
+        button {
+            padding: 5px;
+            color: white;
+            border: none;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            border-radius: 7px;
+            background-color: rgb(10, 10, 238);
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background-color: rgb(31, 31, 238);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Marks checking</h1>
+        <input type="text" id="nameCkecker" placeholder="Enter your name">
+        <input type="text" id="marksChecker" placeholder="Enter your marks"> <br>
+        <button onclick="ckecking()" id="btn">Check</button>
+        <p id="display">
+
+        </p>
+    </div>
+    <script>
+        function ckecking() {
+            let NameChecker = document.getElementById("nameCkecker").value;
+            let MarksChecker = document.getElementById("marksChecker").value;
+            let display = document.getElementById("display")
+
+            let btn = document.getElementById("btn")
+
+
+            if (MarksChecker >= 50) {
+                document.getElementById("display").innerHTML =
+                    "hellow" + " " + NameChecker + ", you passed";
+
+            }
+            else{
+                document.getElementById("display").innerHTML =
+                    "Mr" + " " + NameChecker + ", you failed!"
+            }
+          
+
+        }
+
+    </script>
+
+</body>
+
+</html>

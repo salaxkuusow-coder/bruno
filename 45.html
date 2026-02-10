@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head >
+<body>
+    <div class="text">
+        <h1 id="ca">welcome my wep page</h1>
+        <p  >welcome to our session 1</p>
+        <p id="tx" >welcome to our session 2</p>
+        <p >welcome to our session 3</p>
+        <input type="text" placeholder="username" id="input">
+        <ul id="menue">
+            <li>english</li>
+            <li>java</li>
+            <li>networing</li>
+        </ul>
+    </div>
+    <script>
+        // traversing through elements
+        let div = document.querySelector(".text");
+        console.log(div.lastElementChild);
+
+        // accessing children to the parent node
+        let tx = document.getElementById("tx");
+        console.log(tx.parentNode)
+
+        // prevoius sibling
+        console.log(tx.previousElementSibling)
+        // next sibling
+        console.log(tx.nextElementSibling)
+
+        // to access html element content
+        let txt = document.getElementById("tx").innerHTML
+        console.log(txt)
+        // option 2
+        let t = document.getElementById("tx")
+        console.log(t.textContent)
+        or
+        console.log(tx.innerText)
+
+        // text content displays all contents in the html tag
+        let par = document.querySelector(".text")
+        console.log(par.textContent)
+        // while inner text displays only visible text in the wep page
+        console.log(par.innertext)
+
+        // changing html content
+        let change = document.getElementById("ca");
+        change.innerHTML = "<h1> welcome to our class ca242 </h1>";
+        // or you can use if you want to change tex text only 
+        change.textContent= "new text"
+
+        // selecting an element
+        let inputbox = document.getElementById("input")
+        // get attirbute display or access attribute value
+        console.log(inputbox.getAttribute("placeholder"))
+        //  set attiribute means add new atrribute
+        inputbox.setAttribute("class", "ca242")
+        console.log(inputbox)
+        // checking if attribute exists or not
+        console.log(inputbox.hasAttribute("username"))
+
+        // remove attribute using remove method
+        inputbox.removeAttribute("placeholder")
+        console.log(inputbox)
+
+        // create an element method
+        // let newelement = document.createElement("div")
+        // console.log(newelement)
+
+        // add paragraph inside the element
+        // newelement.innerHTML = "<p> this is the new element content </p>"
+
+        // make visible to the webpage
+        // document.body.appendChild(newelement)
+
+        // modify the property of the element using style
+        // newelement.style.color = "green"
+        // display in the console
+        // console.log(newelement)
+
+        // select the element 
+        let menu = document.querySelector(".menue");
+        // create new element 
+        let list = document.createElement("li")
+        // new element value
+        list.innerHTML="<li> arabi </li>"
+        // add new element in the previois list
+       menue.appendChild(list)
+    //    another option you can use insertadjacentelement method with four different position
+     menu.insertAdjacentElement("afterbegin",list)
+     let c = document.getElementByI("txt");
+
+    //  create 
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+        
+
+
+
+        
+        
+
+    </script>
+</body>
+</html>

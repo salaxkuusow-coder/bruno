@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // callback function
+        // using anonyous callback function
+
+        // function addnumber(a,b,callback){
+        //     let result=a+b
+        //     callback(result)
+        // }
+        // addnumber(12,13,function (sum){
+        //     console.log("the sum of the numbers"+sum)
+        // })
+
+
+        // callback function
+
+        function fristfunction(callback){
+            setTimeout(function(){
+                console.log("do the assigment")
+                callback()
+            },200)
+        }
+function secondfunction(){
+    console.log("checking task")
+}
+fristfunction(secondfunction)
+
+
+
+
+    </script>
+</body>
+</html>

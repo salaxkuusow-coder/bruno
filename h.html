@@ -1,0 +1,61 @@
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function total(marks){
+        let sum = 0;
+        for (let i = 0; i < marks.length; i++){
+       sum += marks[i];
+     }
+      return sum;
+    }
+
+    function avg(t, count){
+    return t / count;
+   }
+
+    function grade(x){
+     if(x >= 80) return "A";
+      else if(x >= 60) return "B";
+     else if(x >= 40) return "C";
+    else return "Fail";
+}
+
+function show(n, g){
+  console.log(n + " Grade: " + g);
+}
+
+let again = "yes";
+
+while(again.toLowerCase() == "yes"){
+  let n = prompt("Enter student name:");
+  let numSubjects = +prompt("How many subjects?");
+  
+  let marks = [];
+  for(let i = 1; i <= numSubjects; i++){
+    let m = +prompt("Enter mark for subject " + i + ":");
+    marks.push(m);
+  }
+
+  let t = total(marks);
+  let a = avg(t, numSubjects);
+  let g = grade(a);
+
+  console.log("Total Marks: " + t);
+  console.log("Average: " + a.toFixed(2));
+  show(n, g);
+
+  again = prompt("Try again? (yes/no)");
+}
+
+    </script>
+    
+</body>
+</body>
+</html>

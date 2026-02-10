@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let itemprice=10
+        let quantaty=4
+        let budget= 300
+        let total_cost=(itemprice*quantaty)
+        let money_left=(budget-total_cost)
+        console.log ("the total_cost is", total_cost)
+        console.log ("the money you left is",money_left)
+        let can_aford=(total_cost<=budget)
+        console.log ("you can_afford",can_aford)
+        let discount=(quantaty>=3 && total_cost>=100)
+        console.log ("you can apply",discount)
+    </script>
+</body>
+</html>

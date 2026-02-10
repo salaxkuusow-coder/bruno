@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// ACTIVTY 2
+        function main(){
+            bruno="yes"
+            while(bruno === "yes"){
+                let name=prompt("enter your name")
+                let subject_1=parseFloat(prompt("enter your score1"))
+                let subject_2=parseFloat(prompt("enter your score2"))
+                let subject_3=parseFloat(prompt("enter your score3"))
+
+                total=marks(subject_1, subject_2, subject_3)
+                avg=avrage(total)
+                grade=grades(avg)
+                display(name,grade)
+                bruno=prompt("if want to keep press yes")
+
+            }
+
+            function marks(subject_1 ,subject_2, subject_3){
+                total= subject_1+subject_2+subject_3
+                return total
+
+            }
+            function avrage(total){
+                avg=total/3
+                return avg
+
+            }
+            function grades(avg){
+                if(avg <=100 && avg >=90){
+                    return "A"
+                }
+                else if(avg <=89 && avg >=80){
+                    return "B"
+                }
+                else if(avg <=79 && avg >=60){
+                    return "C"
+                }
+                else{
+                    return "f"
+                }
+
+
+            }
+            function display(name,grade){
+
+                console.log(name+ " " + "your grade is:",grade)
+            }
+
+        }
+        main()
+    </script>
+</body>
+</html>
